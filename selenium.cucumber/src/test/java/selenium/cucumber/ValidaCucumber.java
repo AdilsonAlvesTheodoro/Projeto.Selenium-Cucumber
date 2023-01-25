@@ -18,7 +18,7 @@ public class ValidaCucumber {
 		driver.get("https://www.selenium.dev/selenium/web/web-form.html");
 		String title = driver.getTitle();
 		assertEquals("Web form", title);
-		System.out.println("Mensagem Capturada Title");
+		System.out.println("Mensagem capturada conforme espectativa" + title);
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
 		WebElement textBox = driver.findElement(By.name("my-text"));
